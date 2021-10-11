@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+/* -------------------------------------- */
+p {
+  color: green;
+}
+.introduction {
+  color: blue;
+}
+/* Dont work, writing does not work because the style attribute is used */
+.paragr1 {
+  color: red;
+}
+/* -------- */
+#p1_tittle {
+  color: chocolate;
+}
+.paragr1 span {
+  color: #000;
+}
+p.paragr1 {
+  color: sienna;
+}
+/* writing does not work because the span item is not a first level item */
+.content > span {
+  color: red;
+}
+/* -------- */
+.parag4 > span {
+  color: red;
+}
+span span {
+  color: #000;
+}
+.parag2 .text {
+  color: cyan;
+}
+.parag3 span {
+  color: brown;
+}
+.parag3 + * {
+  color: deeppink;
+}
+.nav_menu * {
+  color: goldenrod;
+}
+.nav_item {
+  color: aquamarine;
+}
